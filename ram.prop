@@ -31,7 +31,7 @@
 11.  system_cache_limit_kb = 51200
 
 
-12. background_memory_limit <value> 
+12. background_memory_limit = 2048 
 
 13.  adaptive_sleep = 1
 
