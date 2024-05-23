@@ -32,3 +32,11 @@
 
 
 12. background_memory_limit <value> 
+
+13.  adaptive_sleep = 1
+
+
+15.  zram_enabled = 1.
+
+
+16. `foreground_app_memory_control = 2
