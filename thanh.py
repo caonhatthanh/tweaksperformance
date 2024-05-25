@@ -1,5 +1,6 @@
 import os
 import time
+import subprocess
 from tqdm import tqdm
 
 def apply_max_performance():
