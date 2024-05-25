@@ -1,47 +1,47 @@
-1. `game_processor_boost 1`
-2. `game_gpu_boost 1`
-3. `gamemode_fps 0`
-4. `gamemode_gpu 2`
-5. `gamemode_processor 2`
-6. `game_audio_focus_mode 3`
-7. `game_mode_enabled true`
-8. `peak_refresh_rate 120`
-9. `game_mode_cpu_performance performance`
-10. `game_mode_gpu_render_mode performance`
-11. `game_mode_max_framerate 144`
-12. `game_mode_max_power_consumption high`
-13. `game_mode_boost_touch`
-14. `game_mode_touch_boost_enabled true`
-15. `game_mode_network_optimization true`
-16. `game_mode_audio_optimization true`
-17. `vm_heapsize 256m`
-18. `preferred_refresh_rate 120`
-19. `disable_user_limit_freq=1`
-20. `rendering_buffer_size=1048576`
-21. `gpu_rendering_mode=2`
-22. `battery_optimization_mode=0`
-23. `game_gyroscope_enabled=1`
-24. `game_gyroscope_tilt_compensation_enabled=1`
-25. `stay_on_while_plugged_in=3`
-26. `performance_profile=2`
-27. `throttling_temperature_threshold=0`
-28. `min_refresh_rate=60`
-29. `game_mode=1`
-30. `persist.sys.pwr.cluster_control: 1`
-31. `ro.sys.fw.use_thread_migration: true`
-32. `ro.sys.fw.use_sched_mc_power_savings: False`
-33. `persist.sys.android_FPSLIMIT: 120`
-34. `persist.sys.composition.type: gpu`
-35. `persist.sys.ui.hw: true`
-36. `ro.kernel.android.checkjni: 1`
-37. `persist.sys.force_highendgfx: true`
-38. `GPU_BOOST: true`
-39. `CPU_BOOST: true`
-40. `game_auto_temperature_control: 0`
-41. `persist.sys_emc_mode: high_performance`
-42. `cpu_max_speed 1`
-43. `games_fps_boost_enabled: 1`
-44. `game_immersive_mode: 0`
-45. `game_touchscreen_boost: true`
-46. `high_priority: 1`
-47. `low_priority: 0`
+`game_processor_boost 1`
+`game_gpu_boost 1`
+`gamemode_fps 0`
+`gamemode_gpu 2`
+`gamemode_processor 2`
+`game_audio_focus_mode 3`
+`game_mode_enabled true`
+`peak_refresh_rate 120`
+`game_mode_cpu_performance performance`
+`game_mode_gpu_render_mode performance`
+`game_mode_max_framerate 144`
+`game_mode_max_power_consumption high`
+`game_mode_boost_touch`
+`game_mode_touch_boost_enabled true`
+`game_mode_network_optimization true`
+`game_mode_audio_optimization true`
+`vm_heapsize 256m`
+`preferred_refresh_rate 120`
+`disable_user_limit_freq=1`
+`rendering_buffer_size=1048576`
+`gpu_rendering_mode=2`
+`battery_optimization_mode=0`
+`game_gyroscope_enabled=1`
+`game_gyroscope_tilt_compensation_enabled=1`
+`stay_on_while_plugged_in=3`
+`performance_profile=2`
+`throttling_temperature_threshold=0`
+`min_refresh_rate=60`
+`game_mode=1`
+`persist.sys.pwr.cluster_control: 1`
+`ro.sys.fw.use_thread_migration: true`
+`ro.sys.fw.use_sched_mc_power_savings: False`
+`persist.sys.android_FPSLIMIT: 120`
+`persist.sys.composition.type: gpu`
+`persist.sys.ui.hw: true`
+`ro.kernel.android.checkjni: 1`
+`persist.sys.force_highendgfx: true`
+`GPU_BOOST: true`
+`CPU_BOOST: true`
+`game_auto_temperature_control: 0`
+`persist.sys_emc_mode: high_performance`
+`cpu_max_speed 1`
+`games_fps_boost_enabled: 1`
+`game_immersive_mode: 0`
+`game_touchscreen_boost: true`
+`high_priority: 1`
+`low_priority: 0`
