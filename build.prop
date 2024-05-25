@@ -1,3 +1,7 @@
+`ro.product.device=sdm710t-common`<|im_sep|> 
+`ro.vendor.product.manufacturer=Samsung`<|im_sep|> 
+`ro.vendor.product.model=Samsung Galaxy S20+ SM-G985F`<|im_sep|> 
+
 multicore_packet_scheduler=1
 sem_enhanced_cpu_responsiveness=1
 high_priority=1
