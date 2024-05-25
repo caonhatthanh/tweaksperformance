@@ -1,198 +1,47 @@
-`ro.product.device=sdm710t-common`<|im_sep|> 
-`ro.vendor.product.manufacturer=Samsung`<|im_sep|> 
-`ro.vendor.product.model=Samsung Galaxy S20+ SM-G985F`<|im_sep|> 
-
-multicore_packet_scheduler=1
-sem_enhanced_cpu_responsiveness=1
-high_priority=1
-low_power=0
-sys_uidcpupower=1
-force_hwc_ui=true
-sysui_config_enable_hw_accelerated_keyguard=1
-sysui_config_enable_hw_accelerated_cpu=1
-sysui_config_enable_hw_accelerated_transitions=1
-sysui_config_enable_hw_accelerated_scrolling=1 
-sysui_config_enable_scrolling_booster=1 
-hwui.target_cpu_time_percent=100
-cpu.scheduler_pre.emption=1
-cpurend.vsync=false
-hwui.cpu.render_priority=1
-power_check_max_cpu=25
-cpu_scheduler_policy=1
-cpu_thershold=140
-cpu_boost_duration_ms=2000000
-power_profile=2
-force_high_performance=1
-cpu_low_power_delay=10000
-ro.boost.core.maxfreq = 800
-ro.sys.core.turbo_enabled = true
-debug.hwui.use_buffer_age = false
-hwui.use9pu_pixelLbuffers = true
-debug.performance.tuning = 1
-debug.composition.type = gpu
-ro.max.fling_velocity = 15000
-ro.min.fling_velocity = 8000
-ro.bq.gpu_to_cpu_unsupported = true
-cpu_boost_duration_ms 1800000
-cpu_limit_background = 3
-
-power_profile = 2
-
-force_high_performance_all = 1
-
-cpu_limit_background_processes = 3
-
-recents_task_remove_time_limit = 60000
-
-status_bar_display_timeout = 300
-
-background_window_limit = 3
-
-cpu_low_power_delay = 10000
-
-force_hwc_ui = true
-
-stay_on_while_plugged_in = 3
-
-scroll_friction = 0.001
-
-pointer_speed = 1.5
-
-vertical_scroll_decay = 500
-
-ro.sys.fw.use_small_little_cluster = true
-
-ro.sys.fw.use_big_little_cluster = true
-
-ro.sys.fw.use_idle_little_cluster = true
-
-ro.sys.fw.use_perf_tweak = true
-
-ro.sys.cpu.boost = true
-
-ro.sys.fw.use_thread_migration = true
-
-Persist_gpu_enabled = true
-
-debug.sf.swaprect=true
-ro.HOME_APP_ADJ=1
-ro.FOREGROUND_APP_ADJ=0
-ro.VISIBLE_APP_ADJ=0
-ro.mot.eri.losalert.delay=1000
-ro.ril.power_collapse=1
-ro.ril.enable.amr.wideband=1
-ro.ril.enable.aec=1
-ro.ril.disable.power.collapse=1 
-debug.egl.profiler=1
-debug.composition.type=gles
-debug.composition.type=mdp
-debug.gr.swapinterval=1
-debug.egl.sync=true
-debug.egl.vsync=true
-debug.hwui.renderer=skiagl
-debug.hwui.use_buffer_age=true
-ro.boot.UCS_mode = 1
-ro.fmp_config = true
-sem_performance_mode = 4
-SSI_session_cache = 0
-boot.sf.bootdnd = 1
-debug.sf.framedrop = 1
-autocleantype = 1
-roam_setting_data_lte_international = 5
-accessibility_autoclick_delay = 120
-gpu_rendering_profile = 2
-sysui_config_enable_hw_accelerated_gpu = 1
-gpu_debug_app_force_raster = 1
-gpu_debug_app_trace_path = 0
-gpu_debug_app_wm_discards = 0
-gpu_debug_force_msaa = 1
-gpu_debug_app_vb_discards = 0
-gpu_buffer_pool_size = 64
-hwui.render_dirty_regions = false
-debug.hwui.renderer.disable.vramlimit = true
-debug.hwui.max_texture_overdraw = 4
-debug.hwui.max_texture_size = 4096
-debug.hwui.pipeline_cache_size = 6
-Gpu_optimizations = 1
-surface_flinger_max_transaction_per_second = 120
-
- surface_flinger_defer_transaction_until_buffer_ready = true
-
- surface_flinger_threaded_renderer = true
-
- surface_flinger_disable_expensive_blurs = true
-
- surface_flinger_use_dithering = false
-
- surface_flinger_swap_interval = 1
-
- surface_flinger_use_protected_buffers = true
-
- surface_flinger_enable_triple_buffering = true
-
- surface_flinger_disable_fb_compression = true
-
- hdr_effect = 1
-
- k2hd_effect = 0 
- 
- intelligent_sleep_mode = 1
- game_driver_min_frame_rate=96
-
-game_driver_max_frame_rate=120
-
-game_driver_power_saving_mode=0
-
-game_driver_frame_skip_enable=0
-
-game_driver_vsync_enable=1
-
-game_driver_gpu_mode=1
-
-game_driver_fps_limit=120
-
-enabled_hardware_optimizations
-
-o.gpu_frame_rate_per_sec = 60
-
-ro.ril.hep = 0
-
-ro.ril.hsxpa = 2
-
-ro.ril.gprsclass = 12
-
-ro.ril.enable.dtm = 1
-
-ro.ril.hsdpa.category = 8
-
-ro.ril.enable.a53 = 1
-
-ro.ril.enable.3g.prefix = 1
-
-ro.ril.htcmaskw1.bitmask = 4294967295
-
-ro.ril.htcmaskw1 = 14449
-
-ro.ril.hsupa.category = 6
-
-
-
-
-
-ro.cpu_frame_rate_per_sec = 60
-
-dalvik.vm.boot-dex2oat-threads = 8
-
-dalvik.vm.dex2oat-threads = 8
-
-ro.sys.fw.dex2oat_thread_count = 8
-
-dalvik.vm.image-dex2oat-threads = 8 
-
-persist.sys.dalvik.multithread = true
-
-persist.sys.dalvik.hyperthreading = true
-
-dalvik.vm.image-dex2oat-filter = speed
-
-dalvik.vm.dex2oat-filter = speed
+1. `game_processor_boost 1`
+2. `game_gpu_boost 1`
+3. `gamemode_fps 0`
+4. `gamemode_gpu 2`
+5. `gamemode_processor 2`
+6. `game_audio_focus_mode 3`
+7. `game_mode_enabled true`
+8. `peak_refresh_rate 120`
+9. `game_mode_cpu_performance performance`
+10. `game_mode_gpu_render_mode performance`
+11. `game_mode_max_framerate 144`
+12. `game_mode_max_power_consumption high`
+13. `game_mode_boost_touch`
+14. `game_mode_touch_boost_enabled true`
+15. `game_mode_network_optimization true`
+16. `game_mode_audio_optimization true`
+17. `vm_heapsize 256m`
+18. `preferred_refresh_rate 120`
+19. `disable_user_limit_freq=1`
+20. `rendering_buffer_size=1048576`
+21. `gpu_rendering_mode=2`
+22. `battery_optimization_mode=0`
+23. `game_gyroscope_enabled=1`
+24. `game_gyroscope_tilt_compensation_enabled=1`
+25. `stay_on_while_plugged_in=3`
+26. `performance_profile=2`
+27. `throttling_temperature_threshold=0`
+28. `min_refresh_rate=60`
+29. `game_mode=1`
+30. `persist.sys.pwr.cluster_control: 1`
+31. `ro.sys.fw.use_thread_migration: true`
+32. `ro.sys.fw.use_sched_mc_power_savings: False`
+33. `persist.sys.android_FPSLIMIT: 120`
+34. `persist.sys.composition.type: gpu`
+35. `persist.sys.ui.hw: true`
+36. `ro.kernel.android.checkjni: 1`
+37. `persist.sys.force_highendgfx: true`
+38. `GPU_BOOST: true`
+39. `CPU_BOOST: true`
+40. `game_auto_temperature_control: 0`
+41. `persist.sys_emc_mode: high_performance`
+42. `cpu_max_speed 1`
+43. `games_fps_boost_enabled: 1`
+44. `game_immersive_mode: 0`
+45. `game_touchscreen_boost: true`
+46. `high_priority: 1`
+47. `low_priority: 0`
