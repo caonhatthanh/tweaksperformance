@@ -1,39 +1,25 @@
-import os
-import time
+import requests
 import subprocess
-from tqdm import tqdm
+import re
 
-def apply_max_performance():
-    print("\033[92mApplying Max Performance...\033[0m")
-    for i in tqdm(range(101), desc="Loading...", bar_format="{l_bar}{bar:10}{r_bar}"):  # Add color to the progress bar
-        time.sleep(0.1)
-    try:
-        os.system("curl https://raw.githubusercontent.com/caonhatthanh/tweaksperformance/main/build.prop | sh")
-        print("\n\033[92mMax Performance applied successfully!\033[0m")  # Print success message in green
-    except Exception as e:
-        print(f"\nError occurred: {str(e)}")
+# Download the file from GitHub
+url = "https://raw.githubusercontent.com/caonhatthanh/tweaksperformance/main/build.prop"
+response = requests.get(url)
 
-def revert():
-    os.system("termux-reload-fs")
-    print("\nReverted to default system settings.")
+# Parse the settings from the file
+settings = {}
+for line in response.text.splitlines():
+    match = re.match(r"(\w+)=.*", line)
+    if match:
+        setting_name = match.group(1)
+        setting_value = line.split("=")[1].strip()
+        settings[setting_name] = setting_value
 
-def exit_program():
-    print("Exiting program...")
-    quit()
+# Apply the settings to the Android device
+adb_path = "/path/to/adb"
+subprocess.run([f"{adb_path} shell", f"settings put {settings['ro.build.version.release']}"])
+for setting, value in settings.items():
+    if setting != "ro.build.version.release":
+        subprocess.run([f"{adb_path} shell", f"settings put {setting} {value}"])
 
-while True:
-    print("\033[92mTweaks CaoNhatThanhv1\033[0m")  # Set the title color to green
-    print("1. Apply Max Performance")
-    print("2. Revert")
-    print("3. Exit")
-
-    choice = input("Choose an option: ")
-
-    if choice == "1":
-        apply_max_performance()
-    elif choice == "2":
-        revert()
-    elif choice == "3":
-        exit_program()
-    else:
-        print("Invalid option. Please choose a valid option.")
+print("Settings applied!")
