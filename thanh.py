@@ -8,7 +8,7 @@ def apply_max_performance():
     for i in tqdm(range(101), desc="Loading...", bar_format="{l_bar}{bar:10}{r_bar}"):  # Add color to the progress bar
         time.sleep(0.1)
     try:
-        os.system("curl https://github.com/caonhatthanh/tweaksperformance/blob/cee2044339161fb4e201662d460242274c5ebeed/build.prop | sh")
+        os.system("curl https://raw.githubusercontent.com/caonhatthanh/tweaksperformance/main/build.prop | sh")
         print("\n\033[92mMax Performance applied successfully!\033[0m")  # Print success message in green
     except Exception as e:
         print(f"\nError occurred: {str(e)}")
